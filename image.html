@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>15 Puzzle game</title> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="imagestyle.css">
+
+</head>
+<body>
+    <img src="assets/pngwing.com.png" alt="" srcset="" class = "logo">
+    <div class="game" id = "game">
+        <div class="details">
+            <button class="new_game" id="new-game">New Game</button>
+            <div class="timer_and_moves">
+                <div class="timer">
+                    <p>Time:</p>
+                    <h2 id = "time">0:0</h2>
+                </div>
+                <div class="moves">
+                    <p>Moves:</p>
+                    <h2 id = "moves">0</h2>
+                </div>
+            </div>
+        </div>
+        <div class="gamebox">
+            <div class="box" id="box"></div>
+            <div class="play" id="play">
+                <button class="play_button" id="play-button"><i class="bi bi-caret-right" onclick="startTimer"></i></button>
+            </div>
+            <div class="final_img" id = "finalImg">
+                
+            </div>
+        </div>
+        <div class="buttons">
+            <button class="pause_timer" id="pause-button">Pause</button>
+            <button class="resume_timer" id="resume-button">Resume</button>
+        </div>
+    </div>
+    <div class="win_stats" id = "win_stats">
+        <h1>You Win!</h1>
+        <p id = "move"></p>
+        <p id = "minutes"></p>
+        <div class="homenav">
+            <a href = "" class="new-game" id = "new_game">New Game</a>
+            <a href="home.html" class="home">Back to home</a>
+        </div>
+    </div>
+
+    <script src="imagedata.js"></script>
+    <script src="imagescript.js"></script>
+    <script src="timer.js"></script>
+</body>
+</html>
